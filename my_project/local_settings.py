@@ -14,3 +14,36 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 DEFAULT_FROM_EMAIL = 'Equipe Genghiscode <contato@genghiscode.com.br>'
+
+
+# 'chave html'
+# '6LdWrZIaAAAAAAAaj3zTkbd7z9ct2TAXR-OErZ8X'
+
+# 'chave secreta google'
+# '6LdWrZIaAAAAAHlj7Rnj7YY3FquBmEoPHY-gPegb'
+
+
+# 'rest_framework.authentication.SessionAuthentication',
+# "rest_framework.authentication.TokenAuthentication",
+# "rest_framework.authentication.BasicAuthentication",
+# 'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+
+
+# urlpatterns = [
+
+# path('habilidades/', HabilidadesApiViews.as_view(), name='habilidades'),
+# path('habilidades/<int:pk>/', HabilidadesApiViews.as_view(), name='habilidade'),
+# path('formaPagamentos/', FormaPagamentosAPIView.as_view(), name='forma_pagamentos'),
+# path('formaPagamentos/<int:pk>/', FormaPagamentoAPIView.as_view(), name='forma_pagamento'),
+# path('tipoPrestadores/', TipoPrestadoresAPIView.as_view(), name='tipo_prestadores'),
+# path('tipoPrestadores/<int:pk>/', TipoPrestadorAPIView.as_view(), name='forma_pagamento'),
+# path('prestadores/', PrestadoresAPIView.as_view(), name='prestadores'),
+# path('prestadores/<int:pk>/', PrestadorAPIView.as_view(), name='prestador'),
+# path('clientes/', ClientesAPIView.as_view(), name='clientes'),
+# path('clientes/<int:pk>/', ClienteAPIView.as_view(), name='cliente'),
+# path('statusServicos/', StatusServicosAPIView.as_view(), name='status_servicos'),
+# path('statusServicos/<int:pk>/', StatusServicoAPIView.as_view(), name='status_servico'),
+# path('agendaServicos/', AgendaServicosAPIView.as_view(), name='agenda_servicos'),
+# path('agendaServicos/<int:pk>/', AgendaServicoAPIView.as_view(), name='agenda_servico'),
+
+# ]
