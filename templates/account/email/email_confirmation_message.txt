@@ -1,0 +1,30 @@
+{% load i18n %}
+{% load account %}
+
+{% user_display user as user_display %}
+
+{% autoescape off %}
+
+    {% blocktrans with site_name=current_site.name site_domain=current_site.domain %}
+
+    Prezado,
+
+    Falta apenas um passo para você acessar ativar sua conta em meucostureiro.com.
+    Para validar e concluir seu cadastro, clique no link abaixo ou copie e cole o endereço em seu navegador de internet:
+
+    {{ activate_url }}
+
+    {% endblocktrans %}
+
+    {% blocktrans with site_name=current_site.name site_domain=current_site.domain %}
+
+    Atenciosamente,
+    meucostureiro.com
+
+
+    {% endblocktrans %}
+
+{% endautoescape %}
+
+
+

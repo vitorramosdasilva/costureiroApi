@@ -1,0 +1,4 @@
+{% load i18n %}
+{% blocktrans %}
+    Olá, o seu email esta confirmado.{{email}}.
+{% endblocktrans %}
