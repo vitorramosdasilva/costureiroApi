@@ -6,8 +6,10 @@
 # python3 manage.py collectstatic
 # heroku pg:reset # resetar o banco de dados ...
 
+#heroku git:remote -a <your_heroku_app_name>
+
 # migrar dados local para Heroku ...
-# PGUSER=root PGPASSWORD=root heroku pg:push postgres://localhost/call_center  postgresql-acute-90100
+PGUSER=root PGPASSWORD=root heroku pg:push postgres://localhost/costureiro  postgresql-cubic-46880
 
 # Migracoes Models ....
 # heroku run python manage.py makemigrations
