@@ -1,4 +1,6 @@
 import os
+from datetime import timedelta
+
 import dj_database_url
 import django_heroku
 
@@ -182,9 +184,15 @@ ACCOUNT_CONFIRM_EMAIL_ON_GET = True
 LOGIN_URL = 'account/login/'
 APPEND_SLASH = False
 
+
 ACCOUNT_LOGIN_ON_EMAIL_CONFIRMATION = False
 ACCOUNT_EMAIL_CONFIRMATION_ANONYMOUS_REDIRECT_URL = '/account/login/'
 ACCOUNT_DEFAULT_HTTP_PROTOCOL = 'https'
+
+SIMPLE_JWT = {
+    'ACCESS_TOKEN_LIFETIME': timedelta(days=1),
+    'REFRESH_TOKEN_LIFETIME': timedelta(days=2),
+}
 
 try:
     from .local_settings import *

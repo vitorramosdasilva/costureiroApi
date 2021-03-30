@@ -4,24 +4,20 @@ CLOUDINARY = {
     'api_key': '198194936266624',
     'api_secret': 'Sufk2LuruqBR3NXljQ6fvCK6XUY'
 }
-
 # Zoho Email Settings ...
 EMAIL_HOST = 'smtp.zoho.com'
 EMAIL_HOST_USER = 'contato@genghiscode.com.br'
-# EMAIL_HOST_PASSWORD = 'kurRrqPEcmpN' # Antiga
-EMAIL_HOST_PASSWORD = 'b7G9jTj9wmqa'
+EMAIL_HOST_PASSWORD = 'n7Sk8V1w07yx'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 DEFAULT_FROM_EMAIL = 'Equipe Genghiscode <contato@genghiscode.com.br>'
 
+# EMAIL_HOST_PASSWORD = 'kurRrqPEcmpN' # Antiga
+# EMAIL_HOST_PASSWORD = 'b7G9jTj9wmqa'
 
-# 'chave html'
-# '6LdWrZIaAAAAAAAaj3zTkbd7z9ct2TAXR-OErZ8X'
-
-# 'chave secreta google'
-# '6LdWrZIaAAAAAHlj7Rnj7YY3FquBmEoPHY-gPegb'
-
+RECAPTCHA_PUBLIC_KEY = '6LdWrZIaAAAAAAAaj3zTkbd7z9ct2TAXR-OErZ8X'
+RECAPTCHA_PRIVATE_KEY = '6LdWrZIaAAAAAHlj7Rnj7YY3FquBmEoPHY-gPegb'
 
 # 'rest_framework.authentication.SessionAuthentication',
 # "rest_framework.authentication.TokenAuthentication",

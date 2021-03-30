@@ -13,8 +13,6 @@ from .models import (
 admin.site.register(Habilidade)
 admin.site.register(FormaPagamento)
 admin.site.register(TipoPrestador)
-
-
 admin.site.register(Prestador)
 admin.site.register(Cliente)
 admin.site.register(StatusServico)
