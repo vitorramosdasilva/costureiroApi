@@ -12,9 +12,11 @@ Class-based views
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-
+from dj_rest_auth.jwt_auth import get_refresh_view
 from django.contrib import admin
-from django.urls import path , include
+from django.urls import path, include
+from rest_framework_simplejwt.views import TokenVerifyView
+
 from costureiro.urls import router
 
 
@@ -22,5 +24,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('account/', include('accounts.urls')),
     path('api/v1/', include(router.urls)),
+    path('token/verify/', TokenVerifyView.as_view(), name='token_verify') ,
+    path('token/refresh/', get_refresh_view().as_view(), name='token_refresh'),
     # path('account', include('rest_auth.urls.login')),
 ]
